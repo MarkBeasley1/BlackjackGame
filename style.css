@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2, 48, 2);
+}
+
+#wrapper {
+    margin: 0 auto;
+}
+
+#game {
+    background: transparent url('table.jpg') 0 0 no-repeat;
+    border-radius: 5px;
+    color: #333;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    font: 14px/17px Helvetica, Arial, Verdana, sans-serif;
+}
+
+#actions {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #000;
+}
+
+input#wager {
+    margin-left: 5px;
+    position: relative;
+    top: 4px;
+}
+
+/* money */
+#money, #money:before {
+    border-radius: 5px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    padding: 7px;
+}
+
+#money {
+    border: 2px solid #FFC926;
+
+}
+
+#money:before {
+    background: #333;
+    content: '';
+    opacity: 0.0;
+    height: 55px;
+}
+
+#cash, #bank {
+    color: #FFF;
+    margin: 12px 0;
+    font: 700 18px /20px Helvetica, Arial, Verdana, sans-serif;
+    z-index: 1;
+    position: relative;
+    text-shadow: 1px 1px #000;
+}
